@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <h3>Preencha as informações do município</h3>
+        <form class="form-grid">
+
+            <!-- Informações Gerais -->
+            <div class="form-group">
+                <label for="ano">Ano</label>
+                <input type="number" name="ano" id="ano">
+
+                <label for="municipio">Município</label>
+                <input type="text" name="municipio" id="municipio">
+            </div>
+
+            <!-- Total de Crimes -->
+            <div class="form-group">
+                <label for="totalCrimes">Total de Crimes</label>
+                <input type="number" name="totalCrimes" id="totalCrimes">
+            </div>
+
+            <!-- Matrículas por Série -->
+            <div class="form-group">
+                <label for="serie1">1º Série Matrículas</label>
+                <input type="number" name="serie1" id="serie1">
+
+                <label for="serie2">2º Série Matrículas</label>
+                <input type="number" name="serie2" id="serie2">
+
+                <label for="serie3">3º Série Matrículas</label>
+                <input type="number" name="serie3" id="serie3">
+
+                <label for="serie4">4º Série Matrículas</label>
+                <input type="number" name="serie4" id="serie4">
+            </div>
+
+            <!-- Anos Finais -->
+            <div class="form-group">
+                <label for="anosFinaisDocentes">Docentes Anos Finais</label>
+                <input type="number" name="anosFinaisDocentes" id="anosFinaisDocentes">
+
+                <label for="anosFinaisEscolas">Escolas Anos Finais</label>
+                <input type="number" name="anosFinaisEscolas" id="anosFinaisEscolas">
+            </div>
+
+            <!-- Anos Iniciais -->
+            <div class="form-group">
+                <label for="anosIniciaisDocentes">Docentes Anos Iniciais</label>
+                <input type="number" name="anosIniciaisDocentes" id="anosIniciaisDocentes">
+
+                <label for="anosIniciaisEscolas">Escolas Anos Iniciais</label>
+                <input type="number" name="anosIniciaisEscolas" id="anosIniciaisEscolas">
+            </div>
+
+            <!-- Creche -->
+            <div class="form-group">
+                <label for="crecheDocentes">Docentes Creche</label>
+                <input type="number" name="crecheDocentes" id="crecheDocentes">
+
+                <label for="crecheEscolas">Escolas Creche</label>
+                <input type="number" name="crecheEscolas" id="crecheEscolas">
+
+                <label for="crecheMatriculas">Matrículas Creche</label>
+                <input type="number" name="crecheMatriculas" id="crecheMatriculas">
+            </div>
+
+            <!-- Ensino Fundamental -->
+            <div class="form-group">
+                <label for="fundamentalDocentes">Docentes Ensino Fundamental</label>
+                <input type="number" name="fundamentalDocentes" id="fundamentalDocentes">
+
+                <label for="fundamentalEscolas">Escolas Ensino Fundamental</label>
+                <input type="number" name="fundamentalEscolas" id="fundamentalEscolas">
+
+                <label for="fundamentalMatriculas">Matrículas Ensino Fundamental</label>
+                <input type="number" name="fundamentalMatriculas" id="fundamentalMatriculas">
+            </div>
+
+            <!-- Ensino Infantil -->
+            <div class="form-group">
+                <label for="infantilDocentes">Docentes Ensino Infantil</label>
+                <input type="number" name="infantilDocentes" id="infantilDocentes">
+
+                <label for="infantilEscolas">Escolas Ensino Infantil</label>
+                <input type="number" name="infantilEscolas" id="infantilEscolas">
+
+                <label for="infantilMatriculas">Matrículas Ensino Infantil</label>
+                <input type="number" name="infantilMatriculas" id="infantilMatriculas">
+            </div>
+
+            <!-- Ensino Médio -->
+            <div class="form-group">
+                <label for="medioDocentes">Docentes Ensino Médio</label>
+                <input type="number" name="medioDocentes" id="medioDocentes">
+
+                <label for="medioEscolas">Escolas Ensino Médio</label>
+                <input type="number" name="medioEscolas" id="medioEscolas">
+
+                <label for="medioMatriculas">Matrículas Ensino Médio</label>
+                <input type="number" name="medioMatriculas" id="medioMatriculas">
+            </div>
+
+            <!-- Gestões -->
+            <div class="form-group">
+                <label for="estadualDocentes">Docentes Estadual</label>
+                <input type="number" name="estadualDocentes" id="estadualDocentes">
+
+                <label for="estadualEscolas">Escolas Estadual</label>
+                <input type="number" name="estadualEscolas" id="estadualEscolas">
+
+                <label for="estadualMatriculas">Matrículas Estadual</label>
+                <input type="number" name="estadualMatriculas" id="estadualMatriculas">
+
+                <label for="federalDocentes">Docentes Federal</label>
+                <input type="number" name="federalDocentes" id="federalDocentes">
+
+                <label for="federalEscolas">Escolas Federal</label>
+                <input type="number" name="federalEscolas" id="federalEscolas">
+
+                <label for="federalMatriculas">Matrículas Federal</label>
+                <input type="number" name="federalMatriculas" id="federalMatriculas">
+
+                <label for="municipalDocentes">Docentes Municipal</label>
+                <input type="number" name="municipalDocentes" id="municipalDocentes">
+
+                <label for="municipalEscolas">Escolas Municipal</label>
+                <input type="number" name="municipalEscolas" id="municipalEscolas">
+
+                <label for="municipalMatriculas">Matrículas Municipal</label>
+                <input type="number" name="municipalMatriculas" id="municipalMatriculas">
+            </div>
+
+            <!-- Matrículas Não Seriadas -->
+            <div class="form-group">
+                <label for="naoSeriada">Matrículas Não Seriadas</label>
+                <input type="number" name="naoSeriada" id="naoSeriada">
+            </div>
+
+            <!-- Pré-escolar -->
+            <div class="form-group">
+                <label for="preEscolarDocentes">Docentes Pré-escolar</label>
+                <input type="number" name="preEscolarDocentes" id="preEscolarDocentes">
+
+                <label for="preEscolarEscolas">Escolas Pré-escolar</label>
+                <input type="number" name="preEscolarEscolas" id="preEscolarEscolas">
+
+                <label for="preEscolarMatriculas">Matrículas Pré-escolar</label>
+                <input type="number" name="preEscolarMatriculas" id="preEscolarMatriculas">
+            </div>
+
+            <!-- IDEB -->
+            <div class="form-group">
+                <label for="ideb">IDEB</label>
+                <input type="number" name="ideb" id="ideb" step="0.01">
+            </div>
+
+            <!-- Botão -->
+            <div class="form-button">
+                <button type="submit">Realizar previsão</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+<script src="index.js"></script>
+</html>
