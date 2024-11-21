@@ -1,0 +1,102 @@
+/* Reset básico para evitar conflitos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuração do body e html */
+html, body {
+  height: 100%; /* Garante que a altura seja dinâmica */
+  overflow-y: auto; /* Habilita rolagem vertical */
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  background-color: #f0f0f0; /* Fundo cinza claro */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinha o conteúdo no topo */
+  padding: 20px; /* Adiciona espaçamento ao redor */
+}
+
+/* Estilo do container principal */
+section {
+  width: 100%; /* Ocupa toda a largura da página */
+  max-width: 1200px; /* Limita a largura máxima */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Formulário */
+form {
+  width: 100%; /* Ocupa a largura total do container */
+  background-color: #fff; /* Fundo branco */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: visible; /* Garante que o conteúdo não seja cortado */
+}
+
+/* Grade do formulário */
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Grupos de campos */
+.form-group {
+  flex: 1 1 calc(50% - 20px); /* Tamanho dinâmico com espaçamento uniforme */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff; /* Destaque no foco */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botões do formulário */
+.form-button {
+  flex: 1 1 100%; /* Garante que ocupe 100% da largura */
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-button button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button button:hover {
+  background-color: #0056b3; /* Cor mais escura no hover */
+}
+
+/* Adicionado para evitar quebra em telas menores */
+@media (max-width: 768px) {
+  .form-group {
+    flex: 1 1 100%; 
+  }
+}
